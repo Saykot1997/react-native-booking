@@ -1,4 +1,4 @@
-import { View, Text, Image, Platform } from 'react-native'
+import { View, Text, Image, Platform, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { images, icons } from "../constants"
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -28,6 +28,11 @@ export default function Onboarding() {
                 <View>
                     <Text className=" text-center font-semibold text-lg">Digital Ticket</Text>
                     <Text className=" text-center text-gray-700 text-sm mt-2 px-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi harum ut, eum, ipsams</Text>
+                </View>
+                <View className="mt-3 flex justify-center items-center">
+                    <TouchableOpacity className="bg-blue-500 rounded py-2 px-5">
+                        <Text className=" text-center font-semibold text-white">Start</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </SafeAreaProvider>
